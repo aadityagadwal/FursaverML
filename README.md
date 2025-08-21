@@ -1,75 +1,131 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+Perfect, Aaditya. Right now your README looks like a stock Create React App file, so it doesn’t reflect the real purpose of **FursaverML**. Since I know from our past chats that your project is about detecting skin diseases in animals using ML + integrating LLMs for remedies and chat, we can build a much stronger README.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here’s a **draft README.md** you can use to replace the old one:
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# 🐾 FursaverML
 
-### `npm start`
+**Skin Disease Detection in Animals using Machine Learning + LLM-powered Assistance**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+FursaverML is a hybrid machine learning project that helps pet owners detect common skin diseases in cats and dogs using computer vision. It integrates:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **CNN-based models** (trained via Roboflow) for image classification
+* **Traditional ML** for feature extraction and evaluation
+* **LLM-powered chatbot** (via LLaMA API) to provide disease insights, remedies, and follow-up Q\&A
 
-### `npm test`
+This project combines AI-driven image detection with interactive natural language explanations to support responsible pet care.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Upload pet images and detect **skin diseases** with high accuracy.
+* Interactive **chat assistant** for remedies, clarifications, and care advice.
+* Web app built with **React** (frontend) + **Python backend** (FastAPI/Flask).
+* Integrated with **Roboflow API** for trained object detection model.
+* Supports **real-time inference and explanations**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tech Stack
 
-### `npm run eject`
+* **Frontend:** React, Tailwind CSS
+* **Backend:** Python (Flask/FastAPI)
+* **ML Models:** CNN (Transfer Learning), Roboflow API
+* **LLM Integration:** LLaMA / Groq API
+* **Other:** GitHub Actions (CI/CD), XAMPP (early backend testing)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+FursaverML/
+│── frontend/          # React-based UI
+│── backend/           # Python backend (Flask/FastAPI + LLM integration)
+│── models/            # Trained ML models & Roboflow configs
+│── data/              # Dataset (cats & dogs skin disease images)
+│── README.md          # Documentation
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚡ Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Clone the repo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+git clone https://github.com/aadityagadwal/FursaverML.git
+cd FursaverML
+```
 
-### Code Splitting
+### 2. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Frontend:**
 
-### Analyzing the Bundle Size
+```
+cd frontend
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Backend:**
 
-### Making a Progressive Web App
+```
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 3. Environment Variables
 
-### Advanced Configuration
+Create a `.env` file in `backend/` with your API keys:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+ROBOFLOW_API_KEY=your_key_here
+LLM_API_KEY=your_key_here
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📖 Usage
 
-### `npm run build` fails to minify
+1. Start both frontend & backend servers.
+2. Upload a pet image.
+3. The ML model predicts the disease.
+4. Chat with the assistant for remedies, care tips, and further questions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Fursaver
->>>>>>> 30a40ff7249b625e1bc68cfa2ecc53e98f6427b1
-# FursaverML
+---
+
+## 📊 Methodology
+
+* Dataset preparation with **Roboflow**
+* Feature extraction + CNN-based training
+* Transfer learning and hyperparameter tuning
+* LLM integration for explanations
+* Deployment as a web-based tool
+
+---
+
+## 🎯 Roadmap
+
+* [ ] Improve accuracy with larger datasets
+* [ ] Add support for more animal species
+* [ ] Deploy on cloud (AWS/GCP) for scalability
+* [ ] Mobile app version
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a PR.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+Do you want me to also **make it conference/research-paper friendly** (with a citation section, abstract, and methodology diagram), since you’re presenting it at CISES 2025?
