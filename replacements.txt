@@ -1,0 +1,1 @@
+Bearer ${import.meta.env.VITE_GROQ_API_KEY}==>Bearer process.env.REACT_APP_GROQ_API_KEY
