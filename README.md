@@ -1,9 +1,3 @@
-Perfect, Aaditya. Right now your README looks like a stock Create React App file, so it doesn’t reflect the real purpose of **FursaverML**. Since I know from our past chats that your project is about detecting skin diseases in animals using ML + integrating LLMs for remedies and chat, we can build a much stronger README.
-
-Here’s a **draft README.md** you can use to replace the old one:
-
----
-
 # 🐾 FursaverML
 
 **Skin Disease Detection in Animals using Machine Learning + LLM-powered Assistance**
