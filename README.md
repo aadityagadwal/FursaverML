@@ -121,5 +121,3 @@ Feel free to fork the repo and submit a PR.
 ## 📜 License
 
 This project is licensed under the MIT License.
-
-Do you want me to also **make it conference/research-paper friendly** (with a citation section, abstract, and methodology diagram), since you’re presenting it at CISES 2025?
